@@ -221,11 +221,10 @@ git push -u origin main
 
 4. **Push Updates**
    ```bash
-  git add .
-  git commit -m "Your commit message"
-  git push origin main
+   git add .
+   git commit -m "Your commit message"
+   git push origin main
 
-   ```
 
 ## Cloning and Running the Project
 

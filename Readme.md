@@ -191,18 +191,20 @@ movie-booking-system/
    - Backend API: http://localhost:5000
    - API Health Check: http://localhost:5000/api/health
 
-## GitHub Repository Setup ### Creating and Pushing to GitHub
-1. **Initialize Git Repository**
-  bash
-  ## GitHub Repository Setup ### Creating and Pushing to GitHub 1. **Initialize Git Repository**
-  bash
-  ```git init
-  git add .
-  git commit -m "Initial commit: Movie Booking System" ```
+## GitHub Repository Setup
 
-2. **Created GitHub Repository**
+### Creating and Pushing to GitHub
+
+1. **Initialize Git Repository**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit: Movie Booking System"
+   ```
+
+2. **Create GitHub Repository**
    - Go to GitHub.com
-   - Clickd on "New Repository"
+   - Click on "New Repository"
    - Name: `movie-booking-system`
    - Description: `Full-stack movie ticket booking application`
    - Set as Public or Private
@@ -210,10 +212,9 @@ movie-booking-system/
 
 3. **Connect Local Repository to GitHub**
    ```bash
-git remote add origin https://github.com/ratnesh-bt22cse/movie-booking-system.git
-git branch -M main
-git push -u origin main
-
+   git remote add origin https://github.com/ratnesh-bt22cse/movie-booking-system.git
+   git branch -M main
+   git push -u origin main
    ```
 
 4. **Push Updates**
@@ -221,7 +222,7 @@ git push -u origin main
    git add .
    git commit -m "Your commit message"
    git push origin main
-
+   ```
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/ratnesh-bt22cse/movie-booking-system.git

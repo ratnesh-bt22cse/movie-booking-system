@@ -197,9 +197,10 @@ movie-booking-system/
 
 1. **Initialize Git Repository**
    ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Movie Booking System"
+  git init
+  git add .
+  git commit -m "Initial commit: Movie Booking System"
+
    ```
 
 2. **Created GitHub Repository**
@@ -212,16 +213,18 @@ movie-booking-system/
 
 3. **Connect Local Repository to GitHub**
    ```bash
-   git remote add origin https://github.com/yourusername/movie-booking-system.git
-   git branch -M main
-   git push -u origin main
+git remote add origin https://github.com/ratnesh-bt22cse/movie-booking-system.git
+git branch -M main
+git push -u origin main
+
    ```
 
 4. **Push Updates**
    ```bash
-   git add .
-   git commit -m "Your commit message"
-   git push origin main
+  git add .
+  git commit -m "Your commit message"
+  git push origin main
+
    ```
 
 ## Cloning and Running the Project
@@ -230,20 +233,22 @@ movie-booking-system/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/movie-booking-system.git
-   cd movie-booking-system
+  git clone https://github.com/ratnesh-bt22cse/movie-booking-system.git
+  cd movie-booking-system
+
    ```
 
 2. **Install Dependencies**
+
    ```bash
    # Backend dependencies
    cd backend
    npm install
-   
+
    # Frontend dependencies
    cd ../frontend
    npm install
-   ```
+
 
 3. **Configure Environment Variables**
    
@@ -266,6 +271,7 @@ movie-booking-system/
    ```bash
    # Start backend (Terminal 1)
    cd backend
+   node createAdmin.js(only 1 time)
    npm start
    
    # Start frontend (Terminal 2)
@@ -534,8 +540,8 @@ The application uses Socket.io to provide real-time seat availability updates, p
 #### Payment Confirmation
 [![alt text](<Screenshot 2025-09-21 145049.png>)]
 
-#### User Dashboard
-[Image placeholder for User Dashboard]
+#### Booking Confirmation(MY BOOKING)
+[![alt text](<Screenshot 2025-09-21 155924.png>)]
 
 ### Admin Interface
 
@@ -554,24 +560,7 @@ The application uses Socket.io to provide real-time seat availability updates, p
 #### Ticket Cancellation
 [![alt text](<Screenshot 2025-09-21 145306.png>)]
 
-## API Testing Screenshots
 
-### Postman API Testing Results
-
-#### Authentication Tests
-[Image placeholder for Authentication API Tests]
-
-#### Cinema Management Tests
-[Image placeholder for Cinema API Tests]
-
-#### Movie Management Tests
-[Image placeholder for Movie API Tests]
-
-#### Show Management Tests
-[Image placeholder for Show API Tests]
-
-#### Booking Management Tests
-[Image placeholder for Booking API Tests]
 
 ## Environment Variables
 

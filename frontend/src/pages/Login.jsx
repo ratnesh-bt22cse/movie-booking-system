@@ -373,10 +373,10 @@ const Login = () => {
 
           {/* Demo Credentials */}
           <div className="mt-6 p-4 bg-gray-50 rounded-md">
-            <p className="text-xs font-medium text-gray-700 mb-2">Demo Credentials:</p>
+            <p className="text-xs font-medium text-gray-700 mb-2">Admin Login Details</p>
             <div className="text-xs text-gray-600 space-y-1">
-              <p><strong>Admin:</strong> admin@moviebooking.com / admin123</p>
-              <p><strong>User:</strong> Register a new account</p>
+              <p><strong>Admin:</strong> admin@moviebooking.com & password - admin123</p>
+              
             </div>
           </div>
         </div>

@@ -21,3 +21,5 @@ router.put('/:id', auth, admin, updateMovie);
 router.delete('/:id', auth, admin, deleteMovie);
 
 module.exports = router;
+
+

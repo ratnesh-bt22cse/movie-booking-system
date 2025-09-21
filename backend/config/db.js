@@ -166,6 +166,56 @@ const seedDatabase = async () => {
   } catch (error) {
     console.error('Database seeding error:', error);
   }
+
+  const createShowsForMovie = async (movieId) => {
+  try {
+    const Cinema = require('../models/Cinema');
+    const Screen = require('../models/Screen');
+    const Show = require('../models/Show');
+
+    // Get all cinemas and their screens
+    const cinemas = await Cinema.find().populate('screens');
+    
+    if (cinemas.length === 0) {
+      console.log('No cinemas found to create shows');
+      return;
+    }
+
+    const currentDate = new Date();
+    const showTimes = ['10:00', '13:30', '17:00', '20:30'];
+    
+    // Create shows for next 7 days
+    for (const cinema of cinemas) {
+      if (cinema.screens && cinema.screens.length > 0) {
+        // Use first screen of each cinema
+        const screen = cinema.screens[0];
+        
+        for (let day = 0; day < 7; day++) {
+          for (const time of showTimes) {
+            const showDate = new Date(currentDate);
+            showDate.setDate(currentDate.getDate() + day);
+            const [hours, minutes] = time.split(':');
+            showDate.setHours(hours, minutes, 0, 0);
+
+            await Show.create({
+              movie: movieId,
+              screen: screen._id,
+              cinema: cinema._id,
+              showTime: showDate,
+              price: Math.floor(Math.random() * 200) + 200, // Random price 200-400
+              bookedSeats: [],
+              blockedSeats: []
+            });
+          }
+        }
+      }
+    }
+    
+    console.log(`Created shows for movie ${movieId}`);
+  } catch (error) {
+    console.error('Error creating shows for movie:', error);
+  }
+};
 };
 
 module.exports = connectDB;

@@ -225,17 +225,11 @@ git push -u origin main
    git commit -m "Your commit message"
    git push origin main
 
-
-## Cloning and Running the Project
-
-### For New Developers
-
 1. **Clone the Repository**
    ```bash
-  git clone https://github.com/ratnesh-bt22cse/movie-booking-system.git
-  cd movie-booking-system
+   git clone https://github.com/ratnesh-bt22cse/movie-booking-system.git
+   cd movie-booking-system
 
-   ```
 
 2. **Install Dependencies**
 

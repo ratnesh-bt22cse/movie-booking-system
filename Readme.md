@@ -191,12 +191,12 @@ movie-booking-system/
    - Backend API: http://localhost:5000
    - API Health Check: http://localhost:5000/api/health
 
+## GitHub Repository Setup ### Creating and Pushing to GitHub
 1. **Initialize Git Repository**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Movie Booking System"
-
+bash
+  git init
+  git add .
+  git commit -m "Initial commit: Movie Booking System"
 
 2. **Created GitHub Repository**
    - Go to GitHub.com

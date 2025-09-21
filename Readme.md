@@ -193,10 +193,12 @@ movie-booking-system/
 
 ## GitHub Repository Setup ### Creating and Pushing to GitHub
 1. **Initialize Git Repository**
-bash
-  git init
+  bash
+  ## GitHub Repository Setup ### Creating and Pushing to GitHub 1. **Initialize Git Repository**
+  bash
+  ```git init
   git add .
-  git commit -m "Initial commit: Movie Booking System"
+  git commit -m "Initial commit: Movie Booking System" ```
 
 2. **Created GitHub Repository**
    - Go to GitHub.com
